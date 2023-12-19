@@ -6,7 +6,7 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Resume from "./resume.pdf";
 
 const Services = () => {
   // context
@@ -26,11 +26,14 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+        <span>
+          Elevate your projects with DevOps practices that seamlessly integrate
           <br />
-          ispum is simpley dummy text of printing
-        </spane>
+          development and operations. We specialize in optimizing workflows,
+          <br />
+          automating processes, and fostering a culture of continuous
+          improvement.
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
@@ -46,8 +49,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Monitoring"}
+            detail={"Proactive server monitoring for optimal performance and reliability."}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +61,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Continuous Integration/Continuous Deployment"}
+            detail={"Implementing CI/CD pipelines for automated testing and seamless deployments."}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,10 +73,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Infrastructure as Code (IaC)"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
-            }
+              "Automating infrastructure provisioning and management using tools like Terraform and Ansible."            }
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>

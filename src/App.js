@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import Tool from "./components/Tool/Tool";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -26,8 +27,9 @@ function App() {
       <Services />
       <Experience />
       <Works />
-      <Portfolio />
-      <Testimonial />
+      <Tool />
+      {/* <Portfolio /> */}
+      {/* <Testimonial /> */}
       <Contact />
       <Footer />
     </div>
